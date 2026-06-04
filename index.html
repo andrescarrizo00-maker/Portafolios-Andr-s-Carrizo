@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andrés Carrizo | Editor Audiovisual</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#0d0d0d;
+color:white;
+line-height:1.7;
+}
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+}
+
+header{
+position:sticky;
+top:0;
+background:#111;
+border-bottom:1px solid #222;
+z-index:100;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 0;
+}
+
+.logo{
+font-weight:800;
+font-size:1.2rem;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+padding:120px 0;
+}
+
+.hero-grid{
+display:grid;
+grid-template-columns:1fr 300px;
+gap:80px;
+align-items:center;
+}
+
+.hero-logo{
+width:250px;
+height:250px;
+border:2px solid #00d4ff;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:5rem;
+font-weight:800;
+color:#00d4ff;
+margin:auto;
+box-shadow:0 0 40px rgba(0,212,255,.25);
+}
+
+.badge{
+display:inline-block;
+background:#00d4ff;
+color:black;
+padding:8px 15px;
+border-radius:999px;
+font-weight:700;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:4rem;
+line-height:1.1;
+margin-bottom:20px;
+}
+
+.hero p{
+color:#bdbdbd;
+}
+
+.btn{
+display:inline-block;
+padding:14px 28px;
+border-radius:12px;
+text-decoration:none;
+font-weight:700;
+margin-top:25px;
+margin-right:10px;
+}
+
+.primary{
+background:#00d4ff;
+color:black;
+}
+
+.secondary{
+border:1px solid #00d4ff;
+color:white;
+}
+
+section{
+padding:90px 0;
+}
+
+h2{
+margin-bottom:25px;
+font-size:2.3rem;
+}
+
+.stats{
+background:#121212;
+}
+
+.stats-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+text-align:center;
+}
+
+.stats h3{
+font-size:3rem;
+color:#00d4ff;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.skill{
+background:#171717;
+padding:20px;
+border-radius:12px;
+}
+
+.card{
+background:#171717;
+padding:30px;
+border-radius:18px;
+margin-bottom:25px;
+}
+
+.card a{
+display:block;
+color:#00d4ff;
+margin-top:12px;
+text-decoration:none;
+}
+
+.card a:hover{
+text-decoration:underline;
+}
+
+.videos-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.video-card{
+background:#171717;
+padding:30px;
+border-radius:16px;
+text-decoration:none;
+color:white;
+font-weight:600;
+transition:.3s;
+}
+
+.video-card:hover{
+transform:translateY(-5px);
+border:1px solid #00d4ff;
+}
+
+.contact{
+text-align:center;
+}
+
+footer{
+padding:40px;
+text-align:center;
+color:#888;
+border-top:1px solid #222;
+}
+
+@media(max-width:900px){
+
+.hero-grid{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.hero h1{
+font-size:2.8rem;
+}
+
+.stats-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+nav ul{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<div class="container">
+<nav>
+
+<div class="logo">Andrés Carrizo</div>
+
+<ul>
+<li><a href="#sobre">Sobre mí</a></li>
+<li><a href="#trabajos">Trabajos</a></li>
+<li><a href="#ia">IA</a></li>
+<li><a href="#videos">Portfolio</a></li>
+<li><a href="#contacto">Contacto</a></li>
+</ul>
+
+</nav>
+</div>
+</header>
+
+<section class="hero">
+
+<div class="container hero-grid">
+
+<div>
+
+<span class="badge">
++4 años de experiencia
+</span>
+
+<h1>
+Editor para YouTube,
+TikTok y Reels
+</h1>
+
+<p>
+Transformo ideas en contenido dinámico, visualmente atractivo y optimizado para generar retención, crecimiento y resultados.
+</p>
+
+<a href="#videos" class="btn primary">
+Ver Portfolio
+</a>
+
+<a href="https://wa.me/584246517181" target="_blank" class="btn secondary">
+WhatsApp
+</a>
+
+</div>
+
+<div>
+
+<div class="hero-logo">
+AC
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="container stats-grid">
+
+<div>
+<h3>4+</h3>
+<p>Años</p>
+</div>
+
+<div>
+<h3>100K+</h3>
+<p>Suscriptores</p>
+</div>
+
+<div>
+<h3>150K+</h3>
+<p>Seguidores</p>
+</div>
+
+<div>
+<h3>1000+</h3>
+<p>Horas editadas</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="sobre">
+
+<div class="container">
+
+<h2>Sobre mí</h2>
+
+<div class="card">
+
+<p>
+Soy editor audiovisual independiente.
+</p>
+
+<br>
+
+<p>
+He dedicado más de cuatro años de mi carrera profesional a transformar ideas en contenidos claros, dinámicos y visualmente atractivos, ayudando a marcas y creadores a comunicar su mensaje de forma efectiva.
+</p>
+
+<br>
+
+<p>
+He trabajado con clientes pequeños y grandes en la edición y optimización de contenido para redes sociales como YouTube, TikTok e Instagram, enfocándome en automatización, ritmo narrativo y adaptación a cada plataforma.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2>Habilidades</h2>
+
+<div class="skills">
+
+<div class="skill">Comunicación visual</div>
+<div class="skill">Desarrollo de identidad de marca</div>
+<div class="skill">Ilustración digital</div>
+<div class="skill">Gestión de proyectos creativos</div>
+<div class="skill">Retoque y edición de fotos</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="trabajos">
+
+<div class="container">
+
+<h2>Trabajos</h2>
+
+<div class="card">
+
+<h3>YouTube</h3>
+
+<p>
+Trabajé en la creación, edición y desarrollo de contenido para los canales de fútbol y baloncesto Tiro Libre y Triplazo, enfocados en formatos dinámicos y optimizados para YouTube y TikTok.
+</p>
+
+<br>
+
+<p>
+A través de una identidad visual clara, un estilo de edición ágil y una narrativa accesible, logramos construir comunidades sólidas que llevaron a los canales a alcanzar más de 100k suscriptores en Tiro Libre y 50k en Triplazo.
+</p>
+
+<a href="https://www.youtube.com/watch?v=7Abz1XJFNtU&t=7s" target="_blank">
+Ver video destacado
+</a>
+
+<a href="https://www.youtube.com/@tirolibre" target="_blank">
+Canal Tiro Libre
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>TikTok</h3>
+
+<p>
+Trabajé con distintos clientes en la creación y automatización de canales de TikTok enfocados en contenido deportivo.
+</p>
+
+<br>
+
+<p>
+Uno de los proyectos alcanzó 11k seguidores, mientras que otro dedicado a Cristiano Ronaldo superó los 150k seguidores, con múltiples videos convirtiéndose en megavirales.
+</p>
+
+<a href="https://www.tiktok.com/@thereaperfutbol" target="_blank">
+The Reaper Fútbol
+</a>
+
+<a href="https://www.tiktok.com/@familiaronaldo_" target="_blank">
+Familia Ronaldo
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="ia">
+
+<div class="container">
+
+<h2>Edición con Inteligencia Artificial</h2>
+
+<div class="card">
+
+<p>
+He trabajado con diversos clientes en Instagram en la creación de videos con IA.
+</p>
+
+<br>
+
+<p>
+Tengo la capacidad de crear avatares IA utilizando la herramienta FreePik y hacerles hablar con la herramienta HeyGen.
+</p>
+
+<br>
+
+<p>
+Además, puedo crear banners utilizando Inteligencia Artificial con la finalidad de ahorrar tiempo.
+</p>
+
+<a href="https://drive.google.com/file/d/13725X38rkpVcvFsxDTAOz_3kfQM3RRoP/view?usp=drive_link" target="_blank">
+Ejemplo de Proyecto IA #1
+</a>
+
+<a href="https://drive.google.com/file/d/1vyLpJH7-iGDTYrrtph2RLUaNxZ5W0H7Q/view?usp=drive_link" target="_blank">
+Ejemplo de Proyecto IA #2
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="videos">
+
+<div class="container">
+
+<h2>Videos Destacados</h2>
+
+<div class="videos-grid">
+
+<a class="video-card"
+href="https://drive.google.com/file/d/1wdAXVqgUvuHvZQDtfpizOnyVFDhUeS7R/view?usp=drive_link"
+target="_blank">
+Proyecto Destacado #1 </a>
+
+<a class="video-card"
+href="https://drive.google.com/file/d/13725X38rkpVcvFsxDTAOz_3kfQM3RRoP/view?usp=drive_link"
+target="_blank">
+Proyecto Destacado #2 </a>
+
+<a class="video-card"
+href="https://drive.google.com/file/d/13UV_3566jRcog_qqpkVMojGzXQ0rSHKo/view?usp=drive_link"
+target="_blank">
+Proyecto Destacado #3 </a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contacto">
+
+<div class="container contact">
+
+<h2>Trabajemos juntos</h2>
+
+<p>
+andrescarrizo00@gmail.com
+</p>
+
+<p>
++58 4246517181
+</p>
+
+<br>
+
+<a href="mailto:andrescarrizo00@gmail.com" class="btn primary">
+Enviar Email
+</a>
+
+<a href="https://wa.me/584246517181" target="_blank" class="btn secondary">
+WhatsApp
+</a>
+
+</div>
+
+</section>
+
+<footer>
+© 2025 Andrés Carrizo
+</footer>
+
+</body>
+</html>
